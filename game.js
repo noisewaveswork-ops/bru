@@ -284,7 +284,7 @@ class Enemy {
     draw(ctx) {
         ctx.save();
         if (this.image && this.image.complete && this.image.naturalWidth > 0) {
-            ctx.drawImage(this.image, this.x - 14, this.y - 14, 28, 28);
+            ctx.drawImage(this.image, this.x - 25, this.y - 25, 50, 50);
         } else {
             // fallback
             ctx.fillStyle = '#ff0023';
@@ -430,7 +430,7 @@ class Boss {
         ctx.save();
         if (this.image && this.image.complete && this.image.naturalWidth > 0) {
             // рисуем спрайт босса по центру
-            ctx.drawImage(this.image, this.x - 40, this.y - 40, 80, 80);
+            ctx.drawImage(this.image, this.x - 60, this.y - 60, 120, 120);
         } else {
             // старый fallback (упрощён, но сохранён для совместимости)
             const glow = ctx.createRadialGradient(this.x, this.y, 20, this.x, this.y, 50);
