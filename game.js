@@ -523,7 +523,7 @@ class Game {
         this.bgImage = new Image();
         this.bgImage.src = 'assets/background.png';
         this.bgY = 0;
-        this.bgSpeed = 5;
+        this.bgSpeed = 2;
 
         this.playerImage = new Image();
         this.playerImage.src = 'assets/player.png';
